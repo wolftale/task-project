@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 @AllArgsConstructor
-@Entity(name = "tasks")
+@Entity(name = "TASKS")
 public class Task {
 
     @Id
