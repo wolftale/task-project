@@ -32,6 +32,7 @@ dependencies {
 	implementation 'org.junit.jupiter:junit-jupiter:5.10.0'
 	providedRuntime group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '3.1.4'
 	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.7.0'
+	implementation 'org.springframework.boot:spring-boot-starter-mail:3.1.2'
 }
 
 test {
