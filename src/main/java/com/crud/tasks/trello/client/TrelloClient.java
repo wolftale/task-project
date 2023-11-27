@@ -65,25 +65,3 @@ public class TrelloClient {
         return restTemplate.postForObject(url, null, CreatedTrelloCard.class);
     }
 }
-
-//        TrelloBoardDto[] boardsResponse = restTemplate.getForObject(url, TrelloBoardDto[].class);
-//
-//        return Optional.ofNullable(boardsResponse)
-//                .map(Arrays::asList)
-//                .orElse(Collections.emptyList());
-//    }
-
-//    public CreatedTrelloCard createNewCard(TrelloCardDto trelloCardDto) {
-//        URI url = UriComponentsBuilder.fromHttpUrl(trelloApiEndpoint + "/cards")
-//                .queryParam("key", trelloAppKey)
-//                .queryParam("token", trelloToken)
-//                .queryParam("name", trelloCardDto.getName())
-//                .queryParam("desc", trelloCardDto.getDescription())
-//                .queryParam("pos", trelloCardDto.getPos())
-//                .queryParam("idList", trelloCardDto.getListId())
-//                .build()
-//                .encode()
-//                .toUri();
-//        return restTemplate.postForObject(url, null, CreatedTrelloCard.class);
-//    }
-//}
